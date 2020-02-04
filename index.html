@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+    <title>Kart-quiz med Vørner</title>
+</head>
+<body>
+    <div id="page-1">
+        <h1 id="p1-h1">Kart-quiz</h1>
+        <img id="course" src="./img/course.png">
+        <a href="#map"><img id="arrow" src="./img/arrow.png"></a>
+        <img id="vorner" src="./img/vorner.png">
+        <h2 id="m-vorner">MED VØRNER</h2>
+        <a href="#map" id="klikk-her">-TRYKK HER-</a>
+    </div>
+    <div id="page-2">
+        <div id="content">
+            <div class="quiz-container">
+                <h1>Kart-quiz med Vørner</h1>
+                <img id="img-map" src="./img/map.png">
+                
+                <div id="quiz"></div>  
+
+                <button id="submit" class="buttons">Svar</button>
+                <button id="next" class="buttons">Neste</button>
+                <button id="previous" class="buttons">Forrige</button>
+            
+                <div id="results"> </div>
+            </div>
+            
+            <div id="info-container"></div>
+
+            <div id="map"></div>
+            
+        </div>
+    </div>
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.4.1/mapbox-gl.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
+    <script src="./quiz.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>

@@ -1,0 +1,303 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+#page-1{
+    margin: 0;
+    padding: 0;
+
+    height: 100vh;
+    width: 100vw;
+
+    background-color: #3071cd;
+
+    display: grid;
+    grid-auto-flow: row;
+
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+
+
+}
+
+#p1-h1{
+    margin: 0;
+    padding: 0;
+    position: relative;
+
+    top: 50px;
+    font-size: 200px;
+    font-family: 'Bangers', 'Roboto', Arial, Helvetica, sans-serif;
+    color: #3071cd;
+    -webkit-text-stroke: 3px #303026;
+    letter-spacing: 8px;
+
+    z-index: 10;
+}
+
+#course{
+    margin: 0;
+    padding: 0;
+    width: 700px;
+    z-index: 2;
+
+}
+
+#arrow{
+    top: -150px;
+    width: 200px;
+    z-index: 900;
+    left: 50%;
+    animation: moveArrow 12s;
+}
+
+#arrow:hover{
+    cursor: pointer;
+}
+
+#vorner{
+    position: relative;
+    width: 300px;
+    top: 31px;
+    left: 400px;
+    align-self: flex-end;
+    overflow: hidden;
+
+    z-index: 10;
+    animation: moveArrow 10s;
+}
+
+#m-vorner{
+    color:#f15048;
+    position: relative;
+    font-size: 22px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+
+    top: -300px;
+    animation: moveArrow 10s;
+}
+
+#klikk-her{
+    color:#303026;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    position: relative;
+
+    text-decoration: none;
+
+    scroll-behavior: smooth; 
+    top: -215px;
+    left: 0px;
+    animation: moveArrow 13s;
+    z-index: 90;
+}
+
+#map-container{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    z-index: -10000;
+}
+
+#map{
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: -10;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+#content{
+    margin: auto;
+    position: absolute;
+
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.slides{
+    position: absolute;
+    padding: 30px;  
+    left: 0px;
+    top: 15px;
+    width: 500px;
+    height: 100px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    z-index: 1;
+    line-height: 21px;
+}
+
+
+.slides .active-slide{
+    opacity: 1;
+    z-index: 2;
+}
+
+.slide{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 200px;
+    z-index: 3;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.active-slide{
+    opacity: 1;
+    z-index: 2;
+}
+
+.buttons{
+    position: absolute;
+    top: 10px;
+    z-index: 300;
+    text-decoration: none;
+    outline: none;
+}
+
+#next{
+    top: 200px;
+    left: 400px;
+    cursor: pointer;
+    background-color: #75a6eb;
+    border: 2px solid #303026;
+    border-radius: 5px 5px 5px 5px;
+}
+
+#previous{
+    top: 200px;
+    left: 300px;
+    cursor: pointer;
+    background-color: #75a6eb;
+    border: 2px solid #303026;
+    border-radius: 5px 5px 5px 5px;
+}
+
+#submit{
+    top: 170px;
+    left: 600px;
+    height: 50px;
+    width: 70px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #75a6eb;
+    border: 2px solid #303026;
+    border-radius: 5px 5px 5px 5px;
+}
+
+#submit:hover{
+    background-color: #3071cd;
+}
+
+#results{
+    position: absolute;
+    display: grid;
+    grid-auto-flow: row; 
+
+    top: 300px;
+
+    padding: 70px 30px 30px 30px;
+    
+}
+
+#results h1{
+    font-family: 'Bangers', 'Roboto', Arial, Helvetica, sans-serif;
+    position: absolute;
+    font-size: 40px;
+    color: #75a6eb;
+    text-align: center;
+    padding-left: 30px;
+    letter-spacing: 8px; 
+}
+
+#results img{
+    position: absolute;
+    width: 250px;
+    top: 120px;
+    left: 90px;
+    
+}
+
+.question{
+    font-weight: 600;
+}
+
+.answers{
+    margin-bottom: 20px;
+}
+
+.answers label{
+    display: block;
+}
+
+
+.quiz-container{
+    position: relative;
+    display: grid;
+    grid-auto-flow: column; 
+    
+    top: 1px;
+    left: 40px;
+    height: 250px;
+    width: 700px;
+    background-color: rgba(24, 24, 24, 0.7);
+    margin-top: 70px;
+
+    border: 0px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.quiz-container h1{
+    font-family: 'Bangers', 'Roboto', Arial, Helvetica, sans-serif;
+    position: absolute;
+    font-size: 40px;
+    color: #75a6eb;
+    text-align: center;
+    padding-left: 30px;
+    letter-spacing: 8px;
+}
+
+#img-map{
+    position: absolute;
+    height: 130px;
+    width: 130px;
+
+    left: 550px;
+    top: 40px;
+    transform: rotate(-20deg);
+    
+}
+
+#quiz{
+    position: absolute;
+    top: 45px;
+}
+#radio-button{
+    color: #75a6eb;
+    background-color: #75a6eb;
+}
+
+@keyframes moveArrow{
+ 0%{
+   opacity: 0;  
+ }
+ 50%{
+    opacity: 0;
+  }
+ 100%{
+    opacity: 1.0;  
+  }
+};
